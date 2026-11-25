@@ -24,7 +24,6 @@ public class Editor {
         this.estado = this.memento.get(indice);
     }
 
-    // Ctrl + Z: volta para o estado anterior ao atual
     public void desfazer() {
         this.restauraEstado(this.memento.size() - 2);
     }
